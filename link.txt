@@ -1,3 +1,1 @@
-MTMxMjIzODk2OTkyNDM1ODE0NQ.GN3j1k.zjjFHUcbNQz_nunUmc_Ld2jAgcOqM758JiK1Is
-
 enlace: https://discord.com/oauth2/authorize?client_id=1312238969924358145&permissions=8&integration_type=0&scope=bot

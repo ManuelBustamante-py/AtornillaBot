@@ -5,6 +5,12 @@ import asyncio
 from collections import deque
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()  # Carga el archivo .env
+
 
 # Configuración del bot
 intents = discord.Intents.default()
@@ -210,4 +216,5 @@ async def on_message(message):
     await bot.process_commands(message)  # Procesamos comandos además de los eventos
 
 # Ejecutamos el bot
-bot.run('MTMxMjIzODk2OTkyNDM1ODE0NQ.GN3j1k.zjjFHUcbNQz_nunUmc_Ld2jAgcOqM758JiK1Is')  # Sustituye 'YOUR_BOT_TOKEN' con el token de tu bot
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+bot.run(DISCORD_TOKEN)
